@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+}
+
+header {
+  border-width: 1px;
+  border-style: solid;
+  border-color: orange;
+  margin: 5px;
+}
+
+.reveal {
+  border-style: solid;
+  border-color: orange;
+  background-color: white;
+  padding: 10px;
+  margin: auto;
+}
+
+.hide {
+  border-style: none;
+  background-color: rgb(121, 121, 255);
+  padding: 10px;
+  margin: 5px auto 5px auto;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  justify-content: space-evenly;
+}
+
+.section1,
+.section2,
+.section3 {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  justify-content: center;
+}
+
+.cat,
+.dog,
+.cow {
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-color: orange;
+  padding: 5px;
+  margin: 5px;
+}
+
+.cat,
+.dog,
+.cow {
+  /* most important part to start out hidden */
+  visibility: hidden;
+}
+
+.hide:hover {
+  background-color: rgb(50, 50, 255);
+}
+
+.reveal:hover {
+  background-color: rgb(154, 154, 154);
+}
